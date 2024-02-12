@@ -4,6 +4,7 @@ body{
     font: white;
     font-size: 20pt;
     font-weight: normal;
+    text-align: center;
 }
 h1{
     font-family: 'Times New Roman', Times, serif;
@@ -17,18 +18,21 @@ h2{
     color: black;
     font-size: 40pt;
     font-weight: bold;
+    text-align: center;
 }
 h3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
     font-size: 30pt;
     font-weight: medium;
+    text-align: center;
 }
 h4{
     font-family: monospace;
     color: white;
     font-size: 20pt;
     font-weight: medium;
+    text-align: center;
 }
 p{
     line-height: 1.5;
@@ -38,4 +42,32 @@ img{
     padding: 10px;
     margin: 20px;
     border-top-right-radius:30px ;
+}
+nav ul li{
+    display: inline;
+    margin: 10px;
+}
+nav ul li a.active{
+    font-weight: bold;
+    color: white;
+}
+.skip-link{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.skip-link:focus{
+    top: 0;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    width: 80%;
+    align-items: stretch;
+    justify-content: center;
+    border: 5px dashed white;
+    row-gap: 20px;
 }
