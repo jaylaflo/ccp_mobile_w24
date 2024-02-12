@@ -68,6 +68,5 @@ nav ul li a.active{
     width: 80%;
     align-items: stretch;
     justify-content: center;
-    border: 5px dashed white;
     row-gap: 20px;
 }
